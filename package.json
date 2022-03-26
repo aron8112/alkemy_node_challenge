@@ -1,14 +1,14 @@
 {
-  "name": "sequelize-cli",
+  "name": "Alkemy-01-Node",
   "version": "1.0.0",
-  "description": "",
+  "description": "Movie Hub",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
     "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
   },
   "keywords": [],
-  "author": "",
+  "author": "Aron Siccardi",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.15",
