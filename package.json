@@ -1,5 +1,5 @@
 {
-  "name": "Alkemy-01-Node",
+  "name": "Alkemy-Node",
   "version": "1.0.0",
   "description": "Movie Hub",
   "main": "index.js",
@@ -26,5 +26,9 @@
     "mysql2": "^2.3.3",
     "nodemailer": "^6.7.3",
     "sequelize": "^6.17.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebapinery/alkemy-node-api.git"
   }
 }

@@ -32,7 +32,7 @@ router.post(
 
 router.get('/', getAllCharacters);
 router.get('/:id', getCharacterById);
-router.put('/:id', updateCharacter);
+router.patch('/:id', updateCharacter);
 router.delete('/:id', deleteCharacter);
 
 module.exports = router;

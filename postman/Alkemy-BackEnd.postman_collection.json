@@ -1,0 +1,1907 @@
+{
+	"info": {
+		"_postman_id": "56af2344-d480-4bf3-a059-0718ec0de204",
+		"name": "Alkemy-BackEnd",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api",
+			"item": [
+				{
+					"name": "/api",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/api",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "13"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d-fs1UIFVvM2HDqkiob1+yS7ywcfE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Mar 2022 23:41:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "This is root!"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "../users",
+			"item": [
+				{
+					"name": "http://localhost:3000/api/users/auth/register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "user-token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzQ1NjYsImV4cGlyZWRBdCI6MTY0ODQyMDk2Nn0.KmOXwtW_htHxnxrcHPipAwe3Y9HyfbeWbNuWvrwfwbk\"",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"test505\",\r\n  \"email\": \"riroj60448@karavic.com\",\r\n  \"password\": \"9876543210\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/users/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"auth",
+								"register"
+							]
+						},
+						"description": "Creation of new users and then send an email to the new user using the service mailtrap, with a temporal email from https://temp-mail.org/"
+					},
+					"response": [
+						{
+							"name": "http://localhost:3000/api/users/auth/register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									},
+									{
+										"key": "user-token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzQ1NjYsImV4cGlyZWRBdCI6MTY0ODQyMDk2Nn0.KmOXwtW_htHxnxrcHPipAwe3Y9HyfbeWbNuWvrwfwbk\"",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"username\": \"test505\",\r\n  \"email\": \"riroj60448@karavic.com\",\r\n  \"password\": \"9876543210\"\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/users/auth/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "426"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1aa-kIX6osu1YOu3fvAKQdv6q3ysFrc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Mar 2022 23:17:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"newUser\": {\n        \"id\": 15,\n        \"username\": \"test505\",\n        \"email\": \"riroj60448@karavic.com\",\n        \"password\": \"$2a$10$qsj0PJzU4OXofTDc2hIN8ewgHmTHR2owg7Cgsd86T5x5qyRT52k7W\",\n        \"updatedAt\": \"2022-03-26T23:17:07.962Z\",\n        \"createdAt\": \"2022-03-26T23:17:07.962Z\"\n    },\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzY2MjgsImV4cGlyZWRBdCI6MTY0ODQyMzAyOH0.G61xcJi-iPcGb8aUbxUrtgmC4D0ykInSxH75qM63YTE\"\n}"
+						},
+						{
+							"name": "http://localhost:3000/api/users/auth/register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									},
+									{
+										"key": "user-token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzQ1NjYsImV4cGlyZWRBdCI6MTY0ODQyMDk2Nn0.KmOXwtW_htHxnxrcHPipAwe3Y9HyfbeWbNuWvrwfwbk\"",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"username\": \"\",\r\n  \"email\": \"\",\r\n  \"password\": \"\"\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/users/auth/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "340"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"154-uAjTDeYWID5c/8Yhfp6W12zSswM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Mar 2022 23:18:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": [\n        {\n            \"value\": \"\",\n            \"msg\": \"username can not be empty\",\n            \"param\": \"username\",\n            \"location\": \"body\"\n        },\n        {\n            \"value\": \"\",\n            \"msg\": \"It must be a valid email\",\n            \"param\": \"email\",\n            \"location\": \"body\"\n        },\n        {\n            \"value\": \"\",\n            \"msg\": \"It must be a valid email\",\n            \"param\": \"email\",\n            \"location\": \"body\"\n        },\n        {\n            \"value\": \"\",\n            \"msg\": \"password can not be empty\",\n            \"param\": \"password\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:3000/api/users/auth/login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"username\": \"test505\",\r\n\"email\": \"riroj60448@karavic.com\",\r\n\"password\":\"9876543210\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/users/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"auth",
+								"login"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"username\": \"test505\",\r\n\"email\": \"riroj60448@karavic.com\",\r\n\"password\":\"9876543210\"\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/users/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"auth",
+										"login"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "200"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c8-R2qX8weDU/vKgHYYCqsu7m9H+zA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Mar 2022 23:23:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU\"\n}"
+						},
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"username\": \"\",\r\n\"email\": \"\",\r\n\"password\":\"\"\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/users/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"auth",
+										"login"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "260"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"104-q1Dz44IKHcds6kiK3bVQZ4PW1JA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Mar 2022 23:25:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": [\n        {\n            \"value\": \"\",\n            \"msg\": \"username can not be empty\",\n            \"param\": \"username\",\n            \"location\": \"body\"\n        },\n        {\n            \"value\": \"\",\n            \"msg\": \"It must be a valid email\",\n            \"param\": \"email\",\n            \"location\": \"body\"\n        },\n        {\n            \"value\": \"\",\n            \"msg\": \"password can not be empty\",\n            \"param\": \"password\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "../movies",
+			"item": [
+				{
+					"name": "GET../movies",
+					"item": [
+						{
+							"name": "All Movies -- http://localhost:3000/api/movies",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/movies",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"movies"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Token req -- http://localhost:3000/api/movies",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/api/movies",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"movies"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "29"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1d-L12HS7bTXyn1rq7Iugt97JxaT6Q\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 26 Mar 2022 23:27:38 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": \"Token is required\"\n}"
+								},
+								{
+									"name": "Token ok -- http://localhost:3000/api/movies",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "user-token",
+												"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+												"type": "default"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/api/movies",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"movies"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "494"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1ee-nG9pz4SwGSR6KAw6dDaHU+ePMcU\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 26 Mar 2022 23:28:51 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"moviesFound\": [\n        {\n            \"image\": \"./image/poster1.jpg\",\n            \"title\": \"The Shinning\",\n            \"release\": \"1980/12/25\"\n        },\n        {\n            \"image\": \"./image/poster2.jpg\",\n            \"title\": \"The Lion King\",\n            \"release\": \"1994/01/31\"\n        },\n        {\n            \"image\": \"./image/poster3.jpg\",\n            \"title\": \"The Lion King 2\",\n            \"release\": \"2000/02/01\"\n        },\n        {\n            \"image\": \"./image/poster/poster4\",\n            \"title\": \"Doctor Sleep\",\n            \"release\": \"2020/05/14\"\n        },\n        {\n            \"image\": \"./image/poster/poster5\",\n            \"title\": \"Batman vs Superman\",\n            \"release\": \"2018/07/16\"\n        },\n        {\n            \"image\": \"/image/toyt.jpg\",\n            \"title\": \"Toy Story\",\n            \"release\": \"2000/02/25\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Movie by Id -- http://localhost:3000/api/movies/1",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "user-token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/api/movies/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"movies",
+										"1"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Movie by Id -- http://localhost:3000/api/movies/1",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "user-token",
+												"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+												"type": "default"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/api/movies/1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"movies",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "167"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"a7-KMmvBGgo/UydYRTJseAIq0SiUbc\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 26 Mar 2022 23:45:17 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"movie\": {\n        \"id\": 1,\n        \"title\": \"The Shinning\",\n        \"release\": \"1980/12/25\",\n        \"rate\": 5,\n        \"Genre\": {\n            \"name\": \"Thriller\"\n        },\n        \"Characters\": [\n            {\n                \"name\": \"Jack Torrance\"\n            },\n            {\n                \"name\": \"Wendy Torrance\"\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "GET /movies?name=nombre",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "user-token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/api/movies?title=The Shinning",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"movies"
+									],
+									"query": [
+										{
+											"key": "title",
+											"value": "The Shinning"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "GET /movies?name=nombre",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "user-token",
+												"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+												"type": "default"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/api/movies?title=The Shinning",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"movies"
+											],
+											"query": [
+												{
+													"key": "title",
+													"value": "The Shinning"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "99"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"63-OrRbvMgkrq1qHVUzsZiggaBWA/0\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 26 Mar 2022 23:34:05 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"The Shinning\",\n        \"Characters\": [\n            {\n                \"name\": \"Jack Torrance\"\n            },\n            {\n                \"name\": \"Wendy Torrance\"\n            }\n        ]\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "GET /movies?genre=genreId",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "user-token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/api/movies?genre=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"movies"
+									],
+									"query": [
+										{
+											"key": "genre",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "GET /movies?genre=genreId",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "user-token",
+												"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+												"type": "default"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/api/movies?genre=1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"movies"
+											],
+											"query": [
+												{
+													"key": "genre",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "428"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1ac-EIGElHYdg+GXZDJA4WXu9jMDlpw\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 26 Mar 2022 23:37:03 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"The Shinning\",\n        \"image\": \"./image/poster1.jpg\",\n        \"release\": \"1980/12/25\",\n        \"rate\": 5,\n        \"genreId\": 1,\n        \"createdAt\": \"2022-03-25T18:58:17.000Z\",\n        \"updatedAt\": \"2022-03-25T18:58:17.000Z\",\n        \"Genre\": {\n            \"name\": \"Thriller\"\n        }\n    },\n    {\n        \"id\": 4,\n        \"title\": \"Doctor Sleep\",\n        \"image\": \"./image/poster/poster4\",\n        \"release\": \"2020/05/14\",\n        \"rate\": 2,\n        \"genreId\": 1,\n        \"createdAt\": \"2022-03-25T18:58:17.000Z\",\n        \"updatedAt\": \"2022-03-25T18:58:17.000Z\",\n        \"Genre\": {\n            \"name\": \"Thriller\"\n        }\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "GET /movies?order=ASC | DESC",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT../movies",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "user-token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+								"type": "default"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"release\": \"1980/09/21\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/movies/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "user-token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+										"type": "default"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"release\": \"1980/09/21\"\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/movies/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"movies",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "193"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c1-ypgIsKcoA04Tvn26GF+DBtQmwFA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 26 Mar 2022 23:55:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"movie\": {\n        \"id\": 1,\n        \"title\": \"The Shinning\",\n        \"image\": \"./image/poster1.jpg\",\n        \"release\": \"1980/12/25\",\n        \"rate\": 5,\n        \"genreId\": 1,\n        \"createdAt\": \"2022-03-25T18:58:17.000Z\",\n        \"updatedAt\": \"2022-03-25T18:58:17.000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "DEL../movies",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "user-token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/movies/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "user-token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/api/movies/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"movies",
+										"1"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "192"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c0-XrRwotgiXpGggrSSRpCuLfJa8Wo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 27 Mar 2022 00:00:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Cannot delete or update a parent row: a foreign key constraint fails (`sql5480574`.`Characters`, CONSTRAINT `Characters_movieId_foreign_idx` FOREIGN KEY (`movieId`) REFERENCES `Movies` (`id`))"
+						}
+					]
+				},
+				{
+					"name": "POST../movies",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+								"type": "default"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n        \"title\": \"Shrek\",\r\n        \"release\": \"2004/12/25\",\r\n        \"rate\": 5,\r\n        \"genreId\": 2\r\n        }"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/movies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "user-token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+										"type": "default"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n{\r\n        \"title\": \"Shrek\",\r\n        \"release\": \"2004/12/25\",\r\n        \"rate\": 5,\r\n        \"genreId\": 2\r\n        }"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/movies",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"movies"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "70"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"46-uqEpaly479qUQgOfqbs4XRawf1s\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 27 Mar 2022 00:04:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": [\n        {\n            \"msg\": \"required field\",\n            \"param\": \"image\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "user-token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+										"type": "default"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n{\r\n        \"title\": \"Shrek\",\r\n        \"image\": \"./image/shrek.jpg\",\r\n        \"release\": \"2004/12/25\",\r\n        \"rate\": 5,\r\n        \"genreId\": 2\r\n        }"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/movies",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"movies"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "184"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b8-45WB71wUPZeVzbUGWSJxT+gjktY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 27 Mar 2022 00:06:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"movie\": {\n        \"id\": 7,\n        \"title\": \"Shrek\",\n        \"image\": \"./image/shrek.jpg\",\n        \"release\": \"2004/12/25\",\n        \"rate\": 5,\n        \"genreId\": 2,\n        \"updatedAt\": \"2022-03-27T00:06:16.023Z\",\n        \"createdAt\": \"2022-03-27T00:06:16.023Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "../characters",
+			"item": [
+				{
+					"name": "GET../characters",
+					"item": [
+						{
+							"name": "All Characters -- http://localhost:3000/api/characters",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "user-token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/api/characters",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"characters"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "All Characters -- http://localhost:3000/api/characters",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "user-token",
+												"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+												"type": "default"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/api/characters",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"characters"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "520"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"208-pMibqVeamcL4izKhKCUnOKMUyUY\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 27 Mar 2022 00:12:00 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"character\": [\n        {\n            \"image\": \"./images/Jtts.jpg \",\n            \"name\": \"Jack Torrance\"\n        },\n        {\n            \"image\": \"./image/Wtts.jpg \",\n            \"name\": \"Wendy Torrance\"\n        },\n        {\n            \"image\": \"./image/dtds.jpg\",\n            \"name\": \"Danny Torrance\"\n        },\n        {\n            \"image\": \"./image/Simba.jpg \",\n            \"name\": \"Simba\"\n        },\n        {\n            \"image\": \"./image/Timon.jpg\",\n            \"name\": \"Timon\"\n        },\n        {\n            \"image\": \"./image/Pumba.bmp\",\n            \"name\": \"Pumba\"\n        },\n        {\n            \"image\": \"./image/Batman.jpeg\",\n            \"name\": \"Batman\"\n        },\n        {\n            \"image\": \"./image/Superman.jpeg\",\n            \"name\": \"Superman\"\n        },\n        {\n            \"image\": \"./image/WonderWomanJL.jpeg\",\n            \"name\": \"Wonder Woman\"\n        },\n        {\n            \"image\": \"/image/toyt.jpg\",\n            \"name\": \"Toy Story\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Character by Id -- http://localhost:3000/api/characters/1",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "user-token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/api/characters/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"characters",
+										"1"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Character by Id -- http://localhost:3000/api/characters/1",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "user-token",
+												"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+												"type": "default"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/api/characters/1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"characters",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "267"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"10b-ihFdCCZ0OfbZPAffp5+YQ8fj6qc\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 27 Mar 2022 00:22:22 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"character\": {\n        \"id\": 1,\n        \"image\": \"./images/Jtts.jpg \",\n        \"name\": \"Jack Torrance\",\n        \"weight\": 92,\n        \"age\": 44,\n        \"history\": \"A mad man in a mad hotel\",\n        \"movieId\": 1,\n        \"createdAt\": \"2022-03-25T18:58:17.000Z\",\n        \"updatedAt\": \"2022-03-25T18:58:17.000Z\",\n        \"MovieId\": 1,\n        \"Movie\": {\n            \"title\": \"The Shinning\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "GET /characters?name=nombre",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "user-token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/api/movies?title=The Shinning",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"movies"
+									],
+									"query": [
+										{
+											"key": "title",
+											"value": "The Shinning"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "GET /characters?name=nombre",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "user-token",
+												"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+												"type": "default"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/api/characters/?name=Buzz",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"characters",
+												""
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "Buzz"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "246"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"f6-0PfM6uAaVqmpSF0Rhru5z74rMmM\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 27 Mar 2022 03:51:37 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 11,\n    \"image\": \"./image/buzz.jpg\",\n    \"name\": \"Buzz Lightyear\",\n    \"weight\": 2,\n    \"age\": 1,\n    \"history\": \"An toy of an astronaut\",\n    \"movieId\": 6,\n    \"createdAt\": \"2022-03-27T01:17:41.000Z\",\n    \"updatedAt\": \"2022-03-27T01:17:41.000Z\",\n    \"MovieId\": 6,\n    \"Movie\": {\n        \"title\": \"Toy Story\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "GET /characters?age=edad",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "user-token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/api/movies?genre=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"movies"
+									],
+									"query": [
+										{
+											"key": "genre",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET /characters?movies=idMovie",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "user-token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/api/characters/?movie=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"characters",
+										""
+									],
+									"query": [
+										{
+											"key": "movie",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "GET /characters?movies=idMovie",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "user-token",
+												"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+												"type": "default"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:3000/api/characters/?movie=1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"characters",
+												""
+											],
+											"query": [
+												{
+													"key": "movie",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "251"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"fb-VmIgkqtpd7E4Buq8auZOQzTfmtc\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 27 Mar 2022 03:56:59 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 2,\n        \"image\": \"./image/Wtts.jpg \",\n        \"name\": \"Wendy Torrance\",\n        \"weight\": 70,\n        \"age\": 35,\n        \"history\": \"Jack Torrance's wife\",\n        \"movieId\": 1,\n        \"createdAt\": \"2022-03-25T18:58:17.000Z\",\n        \"updatedAt\": \"2022-03-25T18:58:17.000Z\",\n        \"MovieId\": 1,\n        \"Movie\": {\n            \"title\": \"The Shinning\"\n        }\n    }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "PUT../characters/:id",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "user-token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+								"type": "default"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"age\": 55\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/characters/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"characters",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST../characters",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "POST../characters",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "user-token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/characters",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"characters"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a7-leOhECjrAKhf94QJBOSIp1sIkLA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 27 Mar 2022 01:12:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": [\n        {\n            \"msg\": \"required field\",\n            \"param\": \"image\",\n            \"location\": \"body\"\n        },\n        {\n            \"msg\": \"required field\",\n            \"param\": \"name\",\n            \"location\": \"body\"\n        },\n        {\n            \"msg\": \"required field\",\n            \"param\": \"weight\",\n            \"location\": \"body\"\n        },\n        {\n            \"msg\": \"required field\",\n            \"param\": \"weight\",\n            \"location\": \"body\"\n        },\n        {\n            \"msg\": \"required field\",\n            \"param\": \"age\",\n            \"location\": \"body\"\n        },\n        {\n            \"msg\": \"required field\",\n            \"param\": \"age\",\n            \"location\": \"body\"\n        },\n        {\n            \"msg\": \"required field\",\n            \"param\": \"history\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "POST../characters",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									},
+									{
+										"key": "user-token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"image\": \"./image/buzz.jpg\",\r\n      \"name\": \"Buzz Lightyear\",\r\n      \"weight\": 2,\r\n      \"age\": 1,\r\n      \"history\": \"An toy of an astronaut\",\r\n      \"movieId\": 6\r\n    }"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/characters",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"characters"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "218"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"da-JcO7vZnvlJfJ3IZOZ04i73Cw01o\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 27 Mar 2022 01:17:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"character\": {\n        \"id\": 11,\n        \"image\": \"./image/buzz.jpg\",\n        \"name\": \"Buzz Lightyear\",\n        \"weight\": 2,\n        \"age\": 1,\n        \"history\": \"An toy of an astronaut\",\n        \"movieId\": 6,\n        \"updatedAt\": \"2022-03-27T01:17:41.085Z\",\n        \"createdAt\": \"2022-03-27T01:17:41.085Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "DEL../characters/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "user-token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJpcm9qNjA0NDhAa2FyYXZpYy5jb20iLCJjcmVhdGVkQXQiOjE2NDgzMzcwMTgsImV4cGlyZWRBdCI6MTY0ODQyMzQxOH0.KKsN-lfX2iOs3mIxOmXq802vO4DMaK3rbsf-DhVV4mU",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/movies/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

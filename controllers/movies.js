@@ -8,10 +8,11 @@ const { Op } = require('sequelize');
 const createMovie = async (req, res) => {
   try {
     const movie = await Movie.create(req.body);
-    return res.status(201).json({
-      movie,
-    });
-    if (!movie) throw new Error('Cannot create Movie');
+    if (movie) {
+      return res.status(201).json({ movie });
+    } else {
+      return res.status(400).json({msg: 'Cannot create the movie'})
+    }
   } catch (error) {
     return res.status(500).json('Something went wrong');
   }
@@ -92,7 +93,7 @@ const getAllMovies = async (req, res) => {
 const getMovieById = async (req, res) => {
   try {
     const { id } = req.params;
-    const movie = await Movie.findOne({
+    const movie = await Movie.findByPk({
       include: [
         {
           model: Genre,
@@ -121,11 +122,11 @@ const getMovieById = async (req, res) => {
 const updateMovie = async (req, res) => {
   try {
     const { id } = req.params;
-    const [updated] = await Movie.update(id, {
+    const updated = await Movie.update(id, {
       where: { id: id },
     });
     if (updated) {
-      const updatedMovie = await Movie.findOne({ where: { id: id } });
+      const updatedMovie = await Movie.findByPk({ where: { id: id } });
       return res.status(200).json({ movie: updatedMovie });
     } else {
       return res
